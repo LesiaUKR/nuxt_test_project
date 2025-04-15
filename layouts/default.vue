@@ -3,7 +3,6 @@
     <div>
       <NuxtLink to="/">LOGO</NuxtLink>
     </div>
-
     <nav>
       <ul>
         <li>
