@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.3s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.truncate-text {
+  @apply overflow-hidden text-ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;  /* Обмеження на 3 рядки тексту */
+  -webkit-box-orient: vertical;
+}

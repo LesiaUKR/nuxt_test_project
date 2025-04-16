@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="container mx-auto max-w-2xl">
     <div>
-      <NuxtLink to="/">LOGO</NuxtLink>
+      <NuxtLink to="/" class="text-xl font-semibold">LOGO</NuxtLink>
     </div>
     <nav>
       <ul>
@@ -13,6 +13,11 @@
         </li>
       </ul>
     </nav>
+        <ColorModeButton />
     <slot />
   </div>
 </template>
+
+<script setup>
+import ColorModeButton from '~/components/ColorModeButton.vue'
+</script>
