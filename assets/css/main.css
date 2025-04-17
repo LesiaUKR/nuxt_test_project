@@ -18,6 +18,7 @@ ul {
 .truncate-text {
   @apply overflow-hidden text-ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 3;  /* Обмеження на 3 рядки тексту */
+  line-clamp: 3;
+  -webkit-line-clamp: 3;  
   -webkit-box-orient: vertical;
 }
