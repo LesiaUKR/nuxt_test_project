@@ -4,8 +4,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/ui','@nuxtjs/color-mode'],
     css: [
-'~/assets/css/main.css',  // Ваші стилі
-    '~/assets/css/themes.css',  // Теми для кольору
+'~/assets/css/main.css',
+    '~/assets/css/themes.css',
   ],
   app: {
     head: {
