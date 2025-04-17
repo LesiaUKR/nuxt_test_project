@@ -1,75 +1,91 @@
-# Nuxt Minimal Starter
+# Construction News & 3D Viewer
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A Nuxt 3 application showcasing construction news and 3D building visualization using Speckle Viewer.
 
-## Setup
+## Features
 
-Make sure to install dependencies:
+- **Home Page**: Displays latest construction news with responsive card layout
+- **3D Visualization**: Interactive 3D model viewing with Speckle Viewer integration  
+- **Dark/Light Mode**: Theme switching with persistent user preference
+- **Responsive Design**: Mobile-friendly interface using Nuxt UI components
+
+## Tech Stack
+
+- **Frontend Framework**: Nuxt 3
+- **UI Components**: Nuxt UI
+- **Styling**: Tailwind CSS
+- **3D Rendering**: Speckle Viewer
+- **API**: Server-side API routes with mock data
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (version 16.x or later)
+- npm or yarn package manager
+
+### Installation
 
 ```bash
-# npm
+# Clone the repository
+git clone https://github.com/LesiaUKR/nuxt_test_project.git
+
+# Navigate to the project directory
+cd nuxt_test_project
+
+# Install dependencies
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
+# or
 yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+### Development Server
 
 Start the development server on `http://localhost:3000`:
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
+# or
 yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
-
-Build the application for production:
+### Build for Production
 
 ```bash
-# npm
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
+# or
 yarn build
-
-# bun
-bun run build
 ```
 
-Locally preview production build:
+## Project Structure
 
-```bash
-# npm
-npm run preview
+- `pages/` - Application pages (home, 3D visualization)
+- `components/` - Reusable UI components
+- `composables/` - Shared functionality (date formatting, Speckle Viewer)
+- `assets/` - CSS styles
+- `server/api/` - Mock API endpoints
+- `public/` - Public assets like images
 
-# pnpm
-pnpm preview
+## 3D Visualization
 
-# yarn
-yarn preview
+The 3D visualization page features:
 
-# bun
-bun run preview
-```
+- Interactive 3D model viewing
+- Rotation, zoom, and pan controls
+- Loading state management
+- Responsive container sizing
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## API
+
+The mock API provides construction news articles with:
+- Title
+- Image URL
+- Description text
+- Full description
+- Publication date
+
+## Learn More
+
+- [Nuxt Documentation](https://nuxt.com/docs)
+- [Nuxt UI Documentation](https://ui.nuxt.com/)
+- [Speckle Viewer Documentation](https://speckle.guide/dev/viewer.html)
